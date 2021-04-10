@@ -3,4 +3,4 @@
 
 Objectif du projet
 -----------------------
-L’objectif du projet est la mod ́elisation, le peuplement, et la mise en place d’une base de donn ́ees d’un site de e-commerce.
+L’objectif du projet est la modélisation, le peuplement, et la mise en place d’une base de données d’un site de e-commerce.
