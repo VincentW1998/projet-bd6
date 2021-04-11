@@ -1,4 +1,4 @@
 Voici notre modélisation :
 ===========
 
-![](Images/mod.pdf)
+![Modélisation e-commerce](Images/mod.pdf)
