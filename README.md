@@ -7,6 +7,8 @@ L’objectif du projet est la modélisation, le peuplement, et la mise en place 
 
 Membres
 -----------------------
+
+BINOME : 19
     
 **WEI VINCENT** :
 
