@@ -1,4 +1,4 @@
 Voici notre modélisation :
 ===========
 
-![](Images/mod.png)
+![](Images/diag.png)
