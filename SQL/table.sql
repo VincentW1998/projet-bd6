@@ -8,7 +8,7 @@ create table client (
     numero_adresse int, 
     rue_adresse text,
     ville text, 
-    code_postal integer,
+    code_postal text,
     pays text,
     date_naissance date, 
     date_inscription timestamp default current_timestamp,
@@ -31,7 +31,6 @@ drop table if exists commande cascade;
 create table commande(
     id_commande serial primary key,
     id_client int,
-    prix integer not null,
     date_commande timestamp,
     address_facturation text not null,
     foreign key(id_client) references client(id_client)
@@ -95,12 +94,13 @@ create table achat(
 );
 
 drop table if exists paiement cascade;
-create type methode_paiement as enum ('cb', 'paypal');
+create type type_card as enum ('visa', 'mastercard', 'americanexpress');
 create type paiement_status as enum ('accepted','in progress','canceled');
 create table paiement(
     id_paiement serial primary key,
     id_commande int,
-    Mode_paiement methode_paiement,
+    type_carte type_card not null,
+    num_carte varchar(16) not null,
     status paiement_status default 'in progress',
     foreign key (id_commande) references commande(id_commande)
 );
