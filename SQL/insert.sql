@@ -1,6 +1,6 @@
 \copy client from 'CSV/client.csv' CSV HEADER;
 \copy produit from 'CSV/produit.csv' CSV HEADER;
-\copy commande(id_commande, id_client, adresse_facturation) FROM 'CSV/commande.csv' CSV HEADER;
+\copy commande FROM 'CSV/commande.csv' CSV HEADER;
 \copy fournisseur from 'CSV/fournisseur.csv' CSV HEADER;
 \copy disponible from 'CSV/disponible.csv' CSV HEADER;
 \copy indisponible from 'CSV/indisponible.csv' CSV HEADER;
