@@ -37,11 +37,13 @@ create table commande(
 drop table if exists fournisseur cascade;
 create table fournisseur(
     id_fournisseur serial primary key,
+    id_produit int not null,
     nom char (50) not null,
     ville char (50),
     pays char (50),
     telephone int not null,
-    mail char (150) not null
+    mail char (150) not null,
+    foreign key (id_produit) references produit(id_produit)
 );
 
 drop table if exists disponible cascade;
