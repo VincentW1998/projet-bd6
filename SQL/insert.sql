@@ -1,0 +1,14 @@
+\copy client from 'CSV/client.csv' CSV HEADER;
+\copy produit from 'CSV/produit.csv' CSV HEADER;
+\copy commande(id_commande, id_client, adresse_facturation) FROM 'CSV/commande.csv' CSV HEADER;
+\copy fournisseur from 'CSV/fournisseur.csv' CSV HEADER;
+\copy disponible from 'CSV/disponible.csv' CSV HEADER;
+\copy indisponible from 'CSV/indisponible.csv' CSV HEADER;
+\copy panier from 'CSV/panier.csv' CSV HEADER;
+\copy panier_contenu from 'CSV/panier_contenu.csv' CSV HEADER;
+\copy achat(id_achat,id_commande,id_produit,prix) from 'CSV/achat.csv' CSV HEADER;
+\copy paiement(id_paiement,id_commande,type_carte,num_carte) from 'CSV/paiement.csv' CSV HEADER;
+\copy avis from 'CSV/avis.csv' CSV HEADER;
+\copy livraison from 'CSV/livraison.csv' CSV HEADER;
+\copy retour(id_retour,id_achat,id_produit,motif) from 'CSV/retour.csv' CSV HEADER;
+\copy categorie from 'CSV/categorie.csv' CSV HEADER;
