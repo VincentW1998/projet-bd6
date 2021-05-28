@@ -93,3 +93,11 @@ SELECT nom as NomProduit, avg(note) as noteMoyenne, count(id_avis) as nombreAvis
 GROUP BY nom 
 ORDER BY noteMoyenne DESC, nombreAvis DESC
 LIMIT 5;
+
+-- \! echo "Requete 18 : la somme de..."
+-- SELECT sum(montant)
+-- FROM (
+--     SELECT prix as montant
+--     FROM produit
+--     WHERE id.produit = 2
+-- ) as T
