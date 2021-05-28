@@ -40,11 +40,11 @@ FROM client NATURAL JOIN commande
 GROUP BY pays 
 ORDER BY nombre_commande desc;
 
-\! echo "Requete 8 : la plus vieille date de naissance";
+\! echo "Requete 8 : la date de naissance la plus ancienne";
 SELECT min(date_naissance) 
 FROM client;
 
-\! echo "Requete 9 : la plus jeune date de naissance";
+\! echo "Requete 9 : la date de naissance la plus recente";
 SELECT max(date_naissance)
 FROM client;
 
