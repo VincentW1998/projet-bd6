@@ -34,6 +34,7 @@ FROM client
 GROUP BY pays 
 ORDER BY nombre_clients desc;
 
+
 \! echo "Requete 7 : quels pays commandent le plus";
 SELECT pays , count(id_commande) nombre_commande 
 FROM client NATURAL JOIN commande 
@@ -86,7 +87,8 @@ ORDER BY Mois;
 \! echo "Requete 16 : les fournisseurs qui ont au moins 2 retour";
 SELECT nom, count(id_produit)
 FROM fournisseur NATURAL JOIN retour 
-GROUP BY nom HAVING count(id_produit) > 1;
+GROUP BY nom 
+HAVING count(id_produit) > 1;
 
 \! echo "Requete 17 : les 5 articles les mieux notés"; 
 SELECT nom as NomProduit, avg(note) as noteMoyenne, count(id_avis) as nombreAvis FROM produit NATURAL JOIN avis
